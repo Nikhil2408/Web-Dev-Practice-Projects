@@ -7,38 +7,47 @@ let lineActiveNumber = -1;
 
 nextBtn.addEventListener("click", function doProgress()
 {
-    if(circleActiveNumber<progress.length)
+    if(circleActiveNumber !== progress.length-1)
     {
         circleActiveNumber++;
-        if(circleActiveNumber !== progress.length - 1)
-            lineActiveNumber++;
-        addProgress(circleActiveNumber, lineActiveNumber);
+        addCircleProgress(circleActiveNumber);
     }
+    if(lineActiveNumber !== lines.length-1)
+    {
+        lineActiveNumber++;
+        addLineProgress(lineActiveNumber);
+    }
+
     if(circleActiveNumber > -1)
     {
         document.getElementById("prev").disabled = false;
     }
+
     if(circleActiveNumber === progress.length-1)
     {
         document.getElementById("next").disabled = true;
         document.getElementById("prev").disabled = false;
     }
-    
 });
 
 prevBtn.addEventListener("click", function revertProgress()
 {
-    if(circleActiveNumber !== 0)
+    if(circleActiveNumber !== -1)
     {
-        subtractProgress(activeNumber-1);
-        activeNumber--;
+        subtractCircleProgress(circleActiveNumber);
+        circleActiveNumber--;
+    }
+    if(lineActiveNumber !== -1)
+    {
+        subtractLineProgress(lineActiveNumber);
+        lineActiveNumber--;
     }
 
-    if(activeNumber < progress.length)
+    if(circleActiveNumber < progress.length-1)
     {
         document.getElementById("next").disabled = false;
     }
-    if(activeNumber === 0)
+    if(circleActiveNumber === -1)
     {
         document.getElementById("next").disabled = false;
         document.getElementById("prev").disabled = true;
@@ -46,18 +55,26 @@ prevBtn.addEventListener("click", function revertProgress()
 });
 
 
-function addProgress(circleActiveNumber, lineActiveNumber)
+function addCircleProgress(circleActiveNumber)
 {
-    console.log("Inside addProgress method: " + circleActiveNumber, lineActiveNumber);
+    console.log("addCircleProgress " + circleActiveNumber);
     progress[circleActiveNumber].classList.add("active");
-    
+}
+
+function addLineProgress(lineActiveNumber)
+{
+    console.log("addLineProgress " + lineActiveNumber);
     lines[lineActiveNumber].classList.add("active");
 }
 
-function subtractProgress(activeNumber)
+function subtractCircleProgress(circleActiveNumber)
 {
-    console.log("Inside subtractProgress method: " + activeNumber);
-    progress[activeNumber].classList.remove("active");
-    if(activeNumber !== 0)
-        lines[activeNumber-1].classList.remove("active");
+    console.log("subtractCircleProgress " + circleActiveNumber);
+    progress[circleActiveNumber].classList.remove("active");
+}
+
+function subtractLineProgress(lineActiveNumber)
+{
+    console.log("subtractLineProgress " + lineActiveNumber);
+    lines[lineActiveNumber].classList.remove("active");
 }
