@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root
+{
+    --primary-color: rgb(39, 135, 167);
+}
 
 *
 {
@@ -7,7 +12,7 @@
 
 body
 {
-    font-family: 'Roboto';
+    font-family: 'Lato', sans-serif;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -23,15 +28,70 @@ body
     display: flex;
     width: 50vw;
     height: 20vh;
-    /* border: 1px solid black; */
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 
 .progress-step
 {
     background-color: white;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in;
+}
+
+.line
+{
+    background-color: white;
+    width: 80px;
+    height: 3px;
+    transition: 0.7s ease-in;
+}
+
+.btn-section
+{
+    width: 30vw;
+    display:flex;
+    width: 50vw;
+    justify-content: space-around;
+}
+
+.primary-btn
+{
+    border: none;
+    font-weight: bold;
+    padding : 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.primary-btn:hover
+{
+    background-color: rgb(37, 118, 145);
+}
+
+
+.primary-btn:disabled
+{
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+
+.progress-step.active
+{
+    background-color: var(--primary-color);
+    color: white;
+    transition: 0.2s ease-in;
+}
+
+.line.active
+{
+    background-color: var(--primary-color);
+    transition: 0.7s ease-in;
 }
