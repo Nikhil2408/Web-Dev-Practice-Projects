@@ -57,24 +57,24 @@ prevBtn.addEventListener("click", function revertProgress()
 
 function addCircleProgress(circleActiveNumber)
 {
-    console.log("addCircleProgress " + circleActiveNumber);
+    // console.log("addCircleProgress " + circleActiveNumber);
     progress[circleActiveNumber].classList.add("active");
 }
 
 function addLineProgress(lineActiveNumber)
 {
-    console.log("addLineProgress " + lineActiveNumber);
+    // console.log("addLineProgress " + lineActiveNumber);
     lines[lineActiveNumber].classList.add("active");
 }
 
 function subtractCircleProgress(circleActiveNumber)
 {
-    console.log("subtractCircleProgress " + circleActiveNumber);
+    // console.log("subtractCircleProgress " + circleActiveNumber);
     progress[circleActiveNumber].classList.remove("active");
 }
 
 function subtractLineProgress(lineActiveNumber)
 {
-    console.log("subtractLineProgress " + lineActiveNumber);
+    // console.log("subtractLineProgress " + lineActiveNumber);
     lines[lineActiveNumber].classList.remove("active");
 }
