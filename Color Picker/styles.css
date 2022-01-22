@@ -1,0 +1,59 @@
+*
+{
+    box-sizing: border-box;
+}
+
+
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(218, 206, 206);
+}
+
+h1
+{
+    text-align: center;
+}
+
+#color-container
+{
+    display: flex;
+    flex-wrap : wrap;
+
+}
+
+.colorBox
+{
+    flex-direction: row;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+#output
+{
+    display:flex;
+    margin: 40px auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#color-display
+{
+    border: 1px solid black;
+    width: 350px;
+    height: 200px;
+    margin: 20px;
+}
+
+#colorName-display
+{
+    border: 1px solid black;
+    height: 40px;
+    width: 190px;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+}
