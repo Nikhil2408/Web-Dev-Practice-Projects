@@ -108,11 +108,11 @@ for(color of allColors)
     colorBox.style.backgroundColor = color;
     colorBox.classList.add("colorBox");
     colorContainer.appendChild(colorBox);
-    colorBox.addEventListener("click", function changeColor()
-    {
-        colorDisplayer.style.backgroundColor = colorBox.style.backgroundColor
-        colorNameDisplay.innerText = colorDisplayer.style.backgroundColor;
-    });
+    colorBox.addEventListener("click", changeColor);
 }
 
-
+function changeColor()
+{
+    colorDisplayer.style.backgroundColor = this.style.backgroundColor
+    colorNameDisplay.innerText = colorDisplayer.style.backgroundColor;
+};
