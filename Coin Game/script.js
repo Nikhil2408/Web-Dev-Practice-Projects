@@ -20,44 +20,33 @@ document.body.addEventListener("keydown", function (eventObj)
 	{
 		player.style.top = parseInt(getComputedStyle(player).top) + 50 + "px";
 		if(isTouching(coin, player))
-		{
-			coin.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
-			coin.style.top = Math.floor(Math.random() * window.innerHeight) + "px";
-			points++;
-			pointDisplay.value = points;
-		}
+			changeCoinPosition();
 	}
 	if(eventObj.key === 'ArrowRight')
 	{
 		player.style.left = parseInt(getComputedStyle(player).left) + 50 + "px";
 		if(isTouching(coin, player))
-		{
-			coin.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
-			coin.style.top = Math.floor(Math.random() * window.innerHeight) + "px";
-			points++;
-			pointDisplay.value = points;
-		}
+			changeCoinPosition();
 	}
 	if(eventObj.key === 'ArrowLeft')
 	{
 		player.style.left = parseInt(getComputedStyle(player).left) - 50 + "px";
 		if(isTouching(coin, player))
-		{
-			coin.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
-			coin.style.top = Math.floor(Math.random() * window.innerHeight) + "px";
-			points++;
-			pointDisplay.value = points;
-		}
+			changeCoinPosition();
  	}
 	 if(eventObj.key === 'ArrowUp')
 	 {
 		player.style.top = parseInt(getComputedStyle(player).top) - 50 + "px";
 		if(isTouching(coin, player))
-		{
-			coin.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
-			coin.style.top = Math.floor(Math.random() * window.innerHeight) + "px";
-			points++;
-			pointDisplay.value = points;
-		}
+			changeCoinPosition();
 	 }
 });
+
+
+function changeCoinPosition()
+{
+	coin.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
+	coin.style.top = Math.floor(Math.random() * window.innerHeight) + "px";
+	points++;
+	pointDisplay.value = points;
+}
