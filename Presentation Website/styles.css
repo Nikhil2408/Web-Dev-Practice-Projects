@@ -1,0 +1,87 @@
+:root{
+    --page1-bg-color: steelblue;
+    --page2-bg-color: orange;
+    --page3-bg-color: seagreen;
+    --page4-bg-color: grey;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+
+.page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+#page-1 {
+    background-color: var(--page1-bg-color);
+}
+
+#page-2 {
+    background-color: var(--page2-bg-color);
+}
+
+#page-3{
+    background-color: var(--page3-bg-color);
+}
+
+#page-4{
+    background-color: var(--page4-bg-color);
+}
+
+.page > h2{
+    margin: 0rem 0.8rem 0.5rem 0.8rem;
+}
+
+.page > p{
+    margin: 0rem 0.8rem;
+}
+
+.buttons{
+    display: flex;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    margin: 0.8rem 0.3rem;
+}
+
+.primary-btn{
+    background-color: white;
+    color: #333;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.primary-btn:hover{
+    background-color: #333;
+    color: white;
+}
+
+.secondary-btn{
+    background-color: #333;
+    color: white;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.secondary-btn:hover{
+    background-color: white;
+    color: #333;
+}
