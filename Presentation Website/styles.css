@@ -45,10 +45,12 @@ body{
 }
 
 .page > h2{
+    font-size: 2.5rem;
     margin: 0rem 0.8rem 0.5rem 0.8rem;
 }
 
 .page > p{
+    font-size: 1rem;
     margin: 0rem 0.8rem;
 }
 
@@ -84,4 +86,32 @@ body{
 .secondary-btn:hover{
     background-color: white;
     color: #333;
+}
+
+#page-1 > h2{
+    transform: translateY(-1200px);
+    animation-name: slide-down;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slide-down{
+    to{
+        transform: translateY(0px);
+    }
+}
+
+#page-1 > p{
+    transform: translateX(-1200px);
+    animation-name: slide-right;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slide-right{
+    to{
+        transform: translateX(0px);
+    }
 }
