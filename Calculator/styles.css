@@ -48,9 +48,6 @@ body
     align-items: center;
     justify-content: center;
 }
-.container .calc-container{
-    border: 3px solid white;
-}
 
 .container > .calc-container .row{
     display: flex;
