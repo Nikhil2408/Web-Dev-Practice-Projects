@@ -5,6 +5,8 @@
     --operator-color: rgb(224, 87, 37);
     --operator-dark-color: rgb(202, 76, 30);
     --reset-dark-color: rgb(218, 50, 50);
+    --result : rgb(78, 201, 89);
+    --dark-result : rgb(55, 190, 67);
 }
 
 *{
@@ -77,6 +79,16 @@ body
     background-color: var(--lightgrey);
     cursor: pointer;
 } 
+
+.container > .calc-container .row > .equal{
+    background-color: var(--result);
+    color: black;
+}
+
+.container > .calc-container .row > .equal:hover{
+    background-color: var(--dark-result);
+    color: white;
+}
 
 .container > .calc-container > .row > .operator{
     background-color: var(--operator-color);
