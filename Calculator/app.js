@@ -9,6 +9,7 @@ for(let btn of allBtns)
     if(btn.classList.contains("operand"))
     {
         btn.addEventListener("click", function(){
+            currentDisplay = display.value;
             currentDisplay = currentDisplay + btn.innerText;
             display.value = currentDisplay;
         })
@@ -34,7 +35,7 @@ for(let btn of allBtns)
     {
         btn.addEventListener("click", function(){
             currentDisplay = '';
-            display.value = 0;
+            display.value = '';
         })
     }
 }
