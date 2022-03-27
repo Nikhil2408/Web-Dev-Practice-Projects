@@ -43,10 +43,13 @@ body
 .container{
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: 75vh;
     width: 100vw;
     align-items: center;
     justify-content: center;
+}
+.container .calc-container{
+    border: 3px solid white;
 }
 
 .container > .calc-container .row{
