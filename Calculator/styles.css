@@ -1,0 +1,69 @@
+:root{
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #333;
+    overflow: hidden;
+}
+
+#header{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#header #heading{
+    font-size: 3.5rem;
+}
+
+#header > p{
+    font-size: 1.2rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > .calc-container .row{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0.3rem 0rem;
+}
+
+.container > .calc-container .display > input{
+    width: 100%;
+    height: 2.5rem;
+}
+
+.container > .calc-container .row > button{
+    height: 50px;
+    width: 50px;
+    background-color: crimson;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    margin: 0rem 0.2rem;
+} 
+
+.container > .calc-container .row > button:hover{
+    cursor: pointer;
+} 
