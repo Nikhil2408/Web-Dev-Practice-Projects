@@ -18,44 +18,40 @@ form.addEventListener("submit", function(eventObj){
     eventObj.preventDefault();
     if(!isUserNamePresent())
     {
-        usernameErrorMsg.innerText = "Username must be atleast of length 4 characters";
-        usernameErrorMsg.classList.add("error");
+        onError(usernameErrorMsg, "Username must be atleast of length 4 characters");
         usernamePassed = false;
     }
-    else{   
-        usernameErrorMsg.innerText = "";
+    else{
+        onSuccess(usernameErrorMsg);   
         usernamePassed = true;
     }
     
     if(!isEmailValid()){
-        emailErrorMsg.innerText = "Please Enter Valid Email Address";
-        emailErrorMsg.classList.add("error");
+        onError(emailErrorMsg, "Please Enter Valid Email Address");
         emailPassed = false;
     }
 
     else{
-        emailErrorMsg.innerText = "";
+        onSuccess(emailErrorMsg);
         emailPassed = true;
     }
 
     if(!isPasswordPresent()){
-        passwordErrorMsg.innerText = "Password should be atleast of length 6 characters";
-        passwordErrorMsg.classList.add("error");
+        onError(passwordErrorMsg, "Password should be atleast of length 6 characters");
         passwordPassed = false;
     }
 
     else{
-        passwordErrorMsg.innerText = "";
+        onSuccess(passwordErrorMsg);
         passwordPassed = true;
     }
 
     if(!confirmPasswordNotMatched()){
-        confirmPasswordErrorMsg.innerText = "Password do not match";
-        confirmPasswordErrorMsg.classList.add("error");
+        onError(confirmPasswordErrorMsg, "Password do not match");
         confirmPasswordPassed = false;
     }
     else{
-        confirmPasswordErrorMsg.innerText = "";
+        onSuccess(confirmPasswordErrorMsg);
         confirmPasswordPassed = true;
     }
 
@@ -67,6 +63,16 @@ form.addEventListener("submit", function(eventObj){
 })
 
 
+
+function onError(element, message){
+    element.innerText = message;
+    element.classList.add("error");
+    
+}
+
+function onSuccess(element){
+    element.innerText = "";
+}
 
 
 function isUserNamePresent()
