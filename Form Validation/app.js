@@ -18,7 +18,7 @@ form.addEventListener("submit", function(eventObj){
     eventObj.preventDefault();
     if(!isUserNamePresent())
     {
-        usernameErrorMsg.innerText = "Username is mandatory";
+        usernameErrorMsg.innerText = "Username must be atleast of length 4 characters";
         usernameErrorMsg.classList.add("error");
         usernamePassed = false;
     }
@@ -39,7 +39,7 @@ form.addEventListener("submit", function(eventObj){
     }
 
     if(!isPasswordPresent()){
-        passwordErrorMsg.innerText = "Please provide a password for your account (atleast length of 6)";
+        passwordErrorMsg.innerText = "Password should be atleast of length 6 characters";
         passwordErrorMsg.classList.add("error");
         passwordPassed = false;
     }
@@ -62,8 +62,7 @@ form.addEventListener("submit", function(eventObj){
     if(usernamePassed && emailPassed && passwordPassed && confirmPasswordPassed)
     {
         document.querySelector(".form-container").classList.add("hide");
-        document.querySelector(".details-container").classList.remove("hide");
-        
+        document.querySelector(".details-container").classList.remove("hide");    
     }
 })
 
@@ -72,7 +71,7 @@ form.addEventListener("submit", function(eventObj){
 
 function isUserNamePresent()
 {
-    if(!username.value)
+    if(!username.value || username.value.length<4)
         return false;
     return true;
 }
