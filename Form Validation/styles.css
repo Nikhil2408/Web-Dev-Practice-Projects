@@ -66,6 +66,15 @@ body{
     cursor:pointer
 }
 
+
+footer{
+    margin-top: 1rem;
+}
+
+footer > h4{
+    font-size: 1.1rem;
+}
+
 .error{
     color: red;
     margin-left: 0.4rem;
@@ -74,4 +83,8 @@ body{
 
 .hide{
     display: none;
+}
+
+.fa-heart{
+    color: rgb(238, 31, 31);
 }
