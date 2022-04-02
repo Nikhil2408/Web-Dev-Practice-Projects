@@ -32,9 +32,14 @@ body{
     margin: 3rem 1rem 2rem 1rem;
 }
 
-.main-container > .movie-book-container > form > label{
+.main-container > .movie-book-container > .movie-select > label{
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.main-container > .movie-book-container > .movie-select > #movies{
+    width: 230px;
+    outline: 0px;
 }
 
 .main-container > .movie-book-container > .seat-info{

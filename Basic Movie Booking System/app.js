@@ -1,4 +1,6 @@
+const movieSelected = document.querySelector("#movies");
 const seats = document.querySelectorAll(".seat");
+const displayElement = document.querySelector(".main-container > .displayPrice > h3");
 
 let seatsSelected = 0;
 let totalPrice = 0;
@@ -8,16 +10,23 @@ seats.forEach(function(seat){
         {
             seat.classList.toggle("selected");
             calculatePrice();
-            const displayElement = document.querySelector(".main-container > .displayPrice > h3");
-            displayElement.innerText = `You have selected ${seatsSelected} seats. Total Price ${totalPrice}`;
+            updateDisplayElement();
         }
     });
 });
 
 
+movieSelected.addEventListener("change", function(){
+    calculatePrice();
+    updateDisplayElement();
+})
+
 function calculatePrice()
 {
     seatsSelected = document.querySelectorAll(".main-container .movie-book-container .seats-container .selected").length;
-    totalPrice = 100 * seatsSelected;
+    totalPrice = parseInt(movieSelected.value) * seatsSelected;
 }
 
+function updateDisplayElement(){
+    displayElement.innerText = `You have selected ${seatsSelected} seats. Total Price ${totalPrice}`;
+}
