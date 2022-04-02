@@ -1,5 +1,5 @@
 :root{
-    --primary-color: seagreen;
+    --primary-color: #333;
     --occupied-seat: rgb(216, 50, 50);
     --selected-seat: rgb(105, 172, 194);
 }
@@ -79,7 +79,7 @@ body{
 }
 
 .main-container > .movie-book-container > .screen-container{
-    perspective: 1000px;
+    perspective: 500px;
 }
 
 .main-container > .movie-book-container > .screen-container > .movie-screen{
@@ -108,9 +108,13 @@ body{
 }
 
 .main-container > .displayPrice{
-    color: rgb(32, 32, 32);
+    color: rgb(0, 0, 0);
     width: 380px;
     height: 20px;
     margin-top: 2rem;
-    font-size: 1.2rem;
+    font-size: 18p7;
+}
+
+.displayPrice > h3 > span{
+    color: white;
 }
