@@ -1,0 +1,96 @@
+:root{
+    --primary-color: seagreen;
+    --occupied-seat: rgb(216, 50, 50);
+    --selected-seat: rgb(105, 172, 194);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+.main-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container > .movie-book-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container > h2{
+    font-size: 2rem;
+    color: white;
+    margin: 3rem 1rem 2rem 1rem;
+}
+
+.main-container > .movie-book-container > form > label{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.main-container > .movie-book-container > .seat-info{
+    display: flex;
+}
+
+.main-container > .movie-book-container > .seat-info > .available, .occupied, .selected{
+    margin: 2rem 1rem 1rem 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.main-container > .movie-book-container > .seat-info > span{
+    margin-top: 2.5rem;
+    color: white;
+}
+
+
+.occupied{
+    background-color: var(--occupied-seat) !important;
+}
+
+.selected{
+    background-color: var(--selected-seat) !important;
+}
+
+
+.main-container > .movie-book-container > .movie-screen{
+    width: 380px;
+    height: 100px;
+    background-color: white;
+    margin-bottom: 2.5rem;
+    box-shadow: 3px 3px 5px rgb(255, 255, 255, 0.7), -3px 0px 5px rgb(255, 255, 255, 0.7);
+}
+
+.main-container > .movie-book-container > .seats-container > .seats-row {
+    display: flex;
+}
+
+.main-container > .movie-book-container > .seats-container > .seats-row > .seat{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+    margin: 0.5rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+}
+
+.main-container > .displayPrice{
+    color: rgb(32, 32, 32);
+    width: 380px;
+    height: 20px;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}

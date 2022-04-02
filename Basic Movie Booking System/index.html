@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Basic Movie Booking System</title>
+</head>
+<body>
+    <div class="main-container">
+        <h2>Book Your Seat</h2>
+        <div class="movie-book-container">
+            <form action="#">
+                <label for="movies">Select Your Movie:</label>
+                <select name="movies" id="movies">
+                    <option value="none">--Select--</option>
+                    <option value="dark_knight">Dark Knight</option>
+                    <option value="Avengers">Avengers</option>
+                    <option value="KashmirFiles">KashmirFiles</option>
+                    <option value="RRR">RRR</option>
+                </select>
+            </form>
+            <div class="seat-info">
+                <div class="available"></div>
+                <span>Available</span>
+                <div class="occupied"></div>
+                <span>Occupied</span>
+                <div class="selected"></div>
+                <span>Selected</span>
+            </div>
+            <div class="movie-screen"></div>
+            <div class="seats-container">
+                <div class="seats-row">
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div> &nbsp;&nbsp;&nbsp;
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div> &nbsp;&nbsp;&nbsp;
+                    <div class="seat"></div> 
+                    <div class="seat"></div>
+                </div>
+                <div class="seats-row">
+                    <div class="seat"></div>
+                    <div class="seat"></div> &nbsp;&nbsp;&nbsp;
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div> &nbsp;&nbsp;&nbsp;
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="seats-row">
+                    <div class="seat"></div>
+                    <div class="seat"></div> &nbsp;&nbsp;&nbsp;
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div> &nbsp;&nbsp;&nbsp;
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                </div>
+                <div class="seats-row">
+                    <div class="seat"></div>
+                    <div class="seat"></div> &nbsp;&nbsp;&nbsp;
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div> &nbsp;&nbsp;&nbsp;
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+            </div>   
+        </div>
+        <div class="displayPrice">
+            <h3></h3>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
