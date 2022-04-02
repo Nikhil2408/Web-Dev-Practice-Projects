@@ -111,8 +111,8 @@ body{
     color: rgb(0, 0, 0);
     width: 380px;
     height: 20px;
-    margin-top: 2rem;
-    font-size: 18p7;
+    margin: 2rem;
+    font-size: 17px;
 }
 
 .displayPrice > h3 > span{

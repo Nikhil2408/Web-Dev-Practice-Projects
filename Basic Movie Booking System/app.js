@@ -2,13 +2,19 @@ const movieSelected = document.querySelector("#movies");
 const seats = document.querySelectorAll(".seat");
 const displayElement = document.querySelector(".main-container > .displayPrice > h3");
 
-if(localStorage.getItem("seatsStored"))
+
+if(localStorage.getItem("seatsStored") || (localStorage.getItem("movieIndexStored") && localStorage.getItem("moviePriceStored")))
 {
+    movieSelected.selectedIndex = localStorage.getItem("movieIndexStored");
+
     const seatsStored = localStorage.getItem("seatsStored").replaceAll("[", "").replaceAll("]", "").split(",");
 
     seatsStored.forEach(function(seatStored){
         seats[parseInt(seatStored)].classList.toggle("selected");
     });
+
+    const moviePriceStored = parseInt(localStorage.getItem("moviePriceStored"));
+    updateDisplayElement(seatsStored.length, seatsStored.length * moviePriceStored);
 }
 
 let seatsSelectedCount = 0;
@@ -20,15 +26,17 @@ seats.forEach(function(seat){
         {
             seat.classList.toggle("selected");
             calculatePrice();
-            updateDisplayElement();
+            updateDisplayElement(seatsSelectedCount, totalPrice);
         }
     });
 });
 
 
 movieSelected.addEventListener("change", function(eventObj){
+    localStorage.setItem("movieIndexStored", eventObj.target.selectedIndex);
+    localStorage.setItem("moviePriceStored", movieSelected.value);
     calculatePrice();
-    updateDisplayElement();
+    updateDisplayElement(seatsSelectedCount, totalPrice);
 })
 
 function calculatePrice()
@@ -44,7 +52,7 @@ function calculatePrice()
     localStorage.setItem("seatsStored", JSON.stringify(seatsSelectedIndex));
 }
 
-function updateDisplayElement(){
+function updateDisplayElement(seatsSelectedCount, totalPrice){
     displayElement.innerHTML = `You have selected <span> ${seatsSelectedCount} </span> seats. Total Price <span> Rs. ${totalPrice} </span>`;
 }
 
