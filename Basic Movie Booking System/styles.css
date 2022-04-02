@@ -24,6 +24,7 @@ body{
 .main-container > .movie-book-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .main-container > h2{
@@ -32,9 +33,17 @@ body{
     margin: 3rem 1rem 2rem 1rem;
 }
 
+.main-container > .movie-book-container > .movie-select{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 .main-container > .movie-book-container > .movie-select > label{
     font-weight: bold;
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .main-container > .movie-book-container > .movie-select > #movies{
@@ -74,12 +83,14 @@ body{
     width: 380px;
     height: 100px;
     background-color: white;
-    margin-bottom: 2.5rem;
+    margin: 0rem 1rem 2.5rem 1rem;
     box-shadow: 3px 3px 5px rgb(255, 255, 255, 0.7), -3px 0px 5px rgb(255, 255, 255, 0.7);
 }
 
 .main-container > .movie-book-container > .seats-container > .seats-row {
     display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .main-container > .movie-book-container > .seats-container > .seats-row > .seat{
