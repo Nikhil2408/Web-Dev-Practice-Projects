@@ -51,6 +51,7 @@ body{
     justify-content: space-evenly;
     height: 250px;
     width: 350px;
+    border: 3px solid white;
 }
 
 .main-container > .currency-calc-container > .converter > #first-row{
@@ -72,7 +73,7 @@ body{
 
 .main-container > .currency-calc-container > .converter > #second-row{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 #primary{
@@ -81,6 +82,8 @@ body{
     background-color: var(--secondary-color);
     border: none;
     font-weight: bold;
+    margin-left: 1rem;
+    margin-right: 0.3rem;
 }
 
 #primary:hover{
@@ -104,4 +107,5 @@ body{
 #currency2Input{
     height: 1.5rem;
     width: 12rem;
+    text-align: right;
 }

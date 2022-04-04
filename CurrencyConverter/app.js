@@ -5,6 +5,7 @@ const currency2Input = document.querySelector("#currency2Input");
 const swapBtn = document.querySelector("#primary");
 
 currency1Input.value = 0;
+currency2Input.value = 0;
 
 let currencyData;
 let conversion_rate = 0;
@@ -53,6 +54,9 @@ currency1Input.addEventListener("input", () => {
     currency2Input.value = currency1Input.value * conversion_rate;
 });
 
+currency2Input.addEventListener("input", () => {
+    currency1Input.value = currency2Input.value / conversion_rate;
+})
 
 swapBtn.addEventListener("click", () => {
     if(currency1.value !== "none" && currency2.value !== "none"){
