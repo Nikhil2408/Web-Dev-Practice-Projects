@@ -1,0 +1,103 @@
+:root{
+    --secondary-color: rgb(250, 146, 26);
+    --primary-color: rgb(96, 202, 114);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    color: whitesmoke;
+}
+
+.main-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.main-container > .currency-calc-container{
+    width: 400px;
+    /* border: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-money-bill-wave
+{
+    color: var(--primary-color);
+}
+
+.main-container > .currency-calc-container > h2{
+    margin: 4rem 1rem 2.2rem 1rem;
+    font-size: 2rem;
+}
+
+.main-container > .currency-calc-container > p{
+    margin: 0rem 1rem 2rem 1rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.main-container > .currency-calc-container > .converter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 250px;
+    width: 350px;
+}
+
+.main-container > .currency-calc-container > .converter > #first-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#currency1{
+    width: 7rem;
+}
+
+#currency1Input{
+    height: 1.5rem;
+    width: 12rem;
+}
+
+.main-container > .currency-calc-container > .converter > #second-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+#primary{
+    padding: 0.5rem 1.2rem;
+    color: white;
+    background-color: var(--secondary-color);
+    border: none;
+    font-weight: bold;
+}
+
+#primary:hover{
+    background-color: var(--primary-color);
+    cursor: pointer;
+    color: black;
+}
+
+
+.main-container > .currency-calc-container > .converter > #third-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#currency2{
+    width: 7rem;
+}
+
+#currency2Input{
+    height: 1.5rem;
+    width: 12rem;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6ee5cd939d.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="currency-calc-container">
+            <h2><i class="fa-solid fa-money-bill-wave"></i>&nbsp; Currency Converter</h2>
+            <p>This webapp enables the easy conversion of currency values based on present-day exchange rates.</p>
+            <div class="converter">
+                <div id="first-row">
+                    <select name="currency1" id="currency1">
+                        <option value="none">--SELECT--</option>
+                    </select>
+                    <input id="currency1Input" type="number">
+                </div>
+                <div id="second-row">
+                    <button id="primary">Swap</button>
+                    <div>
+                        <i class="fa-solid fa-arrow-up fa-2x"></i>
+                        <i class="fa-solid fa-arrow-down fa-2x"></i>
+                    </div>
+                </div>
+                <div id="third-row">
+                    <select name="currency2" id="currency2">
+                        <option value="none">--SELECT--</option>
+                    </select>
+                    <input id="currency2Input" type="number">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
