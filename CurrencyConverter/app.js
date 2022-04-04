@@ -2,7 +2,7 @@ const currency1 = document.querySelector("#currency1");
 const currency2 = document.querySelector("#currency2");
 const currency1Input = document.querySelector("#currency1Input");
 const currency2Input = document.querySelector("#currency2Input");
-
+const swapBtn = document.querySelector("#primary");
 
 let currencyData;
 let conversion_rate;
@@ -28,24 +28,24 @@ function populateDropDowns()
 
 fetchCurrencyList();
 
-currency1.addEventListener("change", async () => {
+
+async function fetchConversionRate(){
     let response;
     if(currency1.value !== "none" && currency2.value !== "none")
     {
         response = await axios.get(`https://v6.exchangerate-api.com/v6/0a4f5d58fe160ce11365dea0/pair/${currency1.value}/${currency2.value}`);   
         conversion_rate = response.data.conversion_rate;
         console.log(conversion_rate);
+        currency2Input.value = currency1Input.value * conversion_rate;
     }
+}
+
+currency1.addEventListener("change", async () => {
+    fetchConversionRate();
 });
 
 currency2.addEventListener("change", async() => {
-    let response;
-    if(currency1.value !== "none" && currency2.value !== "none")
-    {
-        response = await axios.get(`https://v6.exchangerate-api.com/v6/0a4f5d58fe160ce11365dea0/pair/${currency1.value}/${currency2.value}`);
-        conversion_rate = response.data.conversion_rate;
-        console.log(conversion_rate);
-    }
+    fetchConversionRate();
 })
 
 currency1Input.addEventListener("input", () => {
@@ -53,3 +53,12 @@ currency1Input.addEventListener("input", () => {
 });
 
 
+swapBtn.addEventListener("click", () => {
+    if(currency1.value !== "none" && currency2.value !== "none"){
+        let temp = currency1.value;
+        currency1.value = currency2.value;
+        currency2.value = temp;
+
+        fetchConversionRate();
+    }
+})

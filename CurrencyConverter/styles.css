@@ -65,6 +65,8 @@ body{
 #currency1Input{
     height: 1.5rem;
     width: 12rem;
+    outline: none;
+    text-align: right;
 }
 
 .main-container > .currency-calc-container > .converter > #second-row{
