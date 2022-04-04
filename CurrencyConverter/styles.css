@@ -60,6 +60,7 @@ body{
 
 #currency1{
     width: 7rem;
+    outline: none;
 }
 
 #currency1Input{
@@ -97,6 +98,7 @@ body{
 
 #currency2{
     width: 7rem;
+    outline: none;
 }
 
 #currency2Input{

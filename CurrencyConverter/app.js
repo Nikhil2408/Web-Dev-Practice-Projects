@@ -4,8 +4,10 @@ const currency1Input = document.querySelector("#currency1Input");
 const currency2Input = document.querySelector("#currency2Input");
 const swapBtn = document.querySelector("#primary");
 
+currency1Input.value = 0;
+
 let currencyData;
-let conversion_rate;
+let conversion_rate = 0;
 async function fetchCurrencyList(){
     currencyData = await (await fetch("https://v6.exchangerate-api.com/v6/0a4f5d58fe160ce11365dea0/latest/USD")).json();
     populateDropDowns();
@@ -35,7 +37,6 @@ async function fetchConversionRate(){
     {
         response = await axios.get(`https://v6.exchangerate-api.com/v6/0a4f5d58fe160ce11365dea0/pair/${currency1.value}/${currency2.value}`);   
         conversion_rate = response.data.conversion_rate;
-        console.log(conversion_rate);
         currency2Input.value = currency1Input.value * conversion_rate;
     }
 }
@@ -61,4 +62,4 @@ swapBtn.addEventListener("click", () => {
 
         fetchConversionRate();
     }
-})
+});
