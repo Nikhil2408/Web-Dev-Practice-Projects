@@ -11,3 +11,4 @@ S.No | Project Name |  Link To Project
 7 | Calculator | [Open](https://chipper-profiterole-86fc52.netlify.app)
 8 | Form Validation | [Open](https://calm-centaur-38ce00.netlify.app)
 9 | Basic Movie Booking System | [Open](https://basic-movie-book-system.netlify.app/)
+10 | Currency Converter | [Open](https://currency-converter-webapp.netlify.app/)
