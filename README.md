@@ -24,4 +24,5 @@ S.No | Project Name | Source Code |  Link To Project
 2 | Roll Dice | [Source Code](https://github.com/Nikhil2408/roll-dice) | [Open](https://serene-otter-61674d.netlify.app/)
 3 | Flip The Coin | [Source Code](https://github.com/Nikhil2408/flip-coin) | [Open](https://master--relaxed-nougat-1596d9.netlify.app/)
 4 | Lottery Number Generator | [Source Code](https://github.com/Nikhil2408/lottery-number-generator) | [Open](https://master--adorable-belekoy-02df21.netlify.app/)
+4 | Color Boxes | [Source Code](https://github.com/Nikhil2408/color-boxes) | [Open](https://genuine-cheesecake-5ddf41.netlify.app/)
 
