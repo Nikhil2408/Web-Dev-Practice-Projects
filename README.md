@@ -25,4 +25,7 @@ S.No | Project Name | Source Code |  Link To Project
 3 | Flip The Coin | [Source Code](https://github.com/Nikhil2408/flip-coin) | [Open](https://master--relaxed-nougat-1596d9.netlify.app/)
 4 | Lottery Number Generator | [Source Code](https://github.com/Nikhil2408/lottery-number-generator) | [Open](https://master--adorable-belekoy-02df21.netlify.app/)
 4 | Color Boxes | [Source Code](https://github.com/Nikhil2408/color-boxes) | [Open](https://genuine-cheesecake-5ddf41.netlify.app/)
+5 | Hangman Game | [Source Code](https://github.com/Nikhil2408/hangman-game) | [Open](https://cheerful-rugelach-93f43e.netlify.app/)
+6 | Lights Out Game | [Source Code](https://github.com/Nikhil2408/lights-out-game) | [Open](https://lights-out-game1.netlify.app/)
+
 
