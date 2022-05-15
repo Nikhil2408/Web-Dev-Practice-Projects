@@ -29,6 +29,7 @@ S.No | Project Name | Source Code |  Link To Project
 6 | Lights Out Game | [Source Code](https://github.com/Nikhil2408/lights-out-game) | [Open](https://lights-out-game1.netlify.app/)
 7 | Color Box Maker | [Source Code](https://github.com/Nikhil2408/color-box-maker) | [Open](https://color-box-maker1.netlify.app/)
 8 | Expense Tracker | [Source Code](https://github.com/Nikhil2408/expense-tracker) | [Open](https://expense-tracker3.netlify.app/)
+8 | Birthdays Tracker | [Source Code](https://github.com/Nikhil2408/birthdays-tracker) | [Open](https://birthdays-tracker.netlify.app/)
 
 
 
