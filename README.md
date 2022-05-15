@@ -20,16 +20,16 @@ S.No | Project Name | Source Code |Link To Project
 
 S.No | Project Name | Source Code |  Link To Project
 --- | --- | --- | ---
-1 | Pokemons App | [Source Code](https://github.com/Nikhil2408/pokemons-app) | [Open](https://master--stellular-crisp-e91b5b.netlify.app/)
-2 | Roll Dice | [Source Code](https://github.com/Nikhil2408/roll-dice) | [Open](https://serene-otter-61674d.netlify.app/)
-3 | Flip The Coin | [Source Code](https://github.com/Nikhil2408/flip-coin) | [Open](https://master--relaxed-nougat-1596d9.netlify.app/)
-4 | Lottery Number Generator | [Source Code](https://github.com/Nikhil2408/lottery-number-generator) | [Open](https://master--adorable-belekoy-02df21.netlify.app/)
+1 | Roll Dice | [Source Code](https://github.com/Nikhil2408/roll-dice) | [Open](https://serene-otter-61674d.netlify.app/)
+2 | Flip The Coin | [Source Code](https://github.com/Nikhil2408/flip-coin) | [Open](https://master--relaxed-nougat-1596d9.netlify.app/)
+3 | Lottery Number Generator | [Source Code](https://github.com/Nikhil2408/lottery-number-generator) | [Open](https://master--adorable-belekoy-02df21.netlify.app/)
 4 | Color Boxes | [Source Code](https://github.com/Nikhil2408/color-boxes) | [Open](https://genuine-cheesecake-5ddf41.netlify.app/)
 5 | Hangman Game | [Source Code](https://github.com/Nikhil2408/hangman-game) | [Open](https://cheerful-rugelach-93f43e.netlify.app/)
 6 | Lights Out Game | [Source Code](https://github.com/Nikhil2408/lights-out-game) | [Open](https://lights-out-game1.netlify.app/)
 7 | Color Box Maker | [Source Code](https://github.com/Nikhil2408/color-box-maker) | [Open](https://color-box-maker1.netlify.app/)
+8 | Tours | [Source Code](https://github.com/Nikhil2408/tours) | [Open](https://resplendent-meringue-ae1434.netlify.app)
 8 | Expense Tracker | [Source Code](https://github.com/Nikhil2408/expense-tracker) | [Open](https://expense-tracker3.netlify.app/)
-8 | Birthdays Tracker | [Source Code](https://github.com/Nikhil2408/birthdays-tracker) | [Open](https://birthdays-tracker.netlify.app/)
+9 | Birthdays Tracker | [Source Code](https://github.com/Nikhil2408/birthdays-tracker) | [Open](https://birthdays-tracker.netlify.app/)
 
 
 
