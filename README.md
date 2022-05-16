@@ -28,8 +28,9 @@ S.No | Project Name | Source Code |  Link To Project
 6 | Lights Out Game | [Source Code](https://github.com/Nikhil2408/lights-out-game) | [Open](https://lights-out-game1.netlify.app/)
 7 | Color Box Maker | [Source Code](https://github.com/Nikhil2408/color-box-maker) | [Open](https://color-box-maker1.netlify.app/)
 8 | Tours | [Source Code](https://github.com/Nikhil2408/tours) | [Open](https://resplendent-meringue-ae1434.netlify.app)
-8 | Expense Tracker | [Source Code](https://github.com/Nikhil2408/expense-tracker) | [Open](https://expense-tracker3.netlify.app/)
-9 | Birthdays Tracker | [Source Code](https://github.com/Nikhil2408/birthdays-tracker) | [Open](https://birthdays-tracker.netlify.app/)
+9 | Menu Page + Toggle Theme + FAQs | [Source Code](https://github.com/Nikhil2408/menu-page) | [Open](https://ubiquitous-custard-2cd332.netlify.app)
+10 | Expense Tracker | [Source Code](https://github.com/Nikhil2408/expense-tracker) | [Open](https://expense-tracker3.netlify.app/)
+11 | Birthdays Tracker | [Source Code](https://github.com/Nikhil2408/birthdays-tracker) | [Open](https://birthdays-tracker.netlify.app/)
 
 
 
