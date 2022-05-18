@@ -31,6 +31,7 @@ S.No | Project Name | Source Code |  Link To Project
 9 | Menu Page + Toggle Theme + FAQs | [Source Code](https://github.com/Nikhil2408/menu-page) | [Open](https://ubiquitous-custard-2cd332.netlify.app)
 10 | Expense Tracker | [Source Code](https://github.com/Nikhil2408/expense-tracker) | [Open](https://expense-tracker3.netlify.app/)
 11 | Birthdays Tracker | [Source Code](https://github.com/Nikhil2408/birthdays-tracker) | [Open](https://birthdays-tracker.netlify.app/)
+12 | Color Shades Generator | [Source Code](https://github.com/Nikhil2408/color-shade-generator) | [Open](https://color-shades-generator1.netlify.app/)
 
 
 
