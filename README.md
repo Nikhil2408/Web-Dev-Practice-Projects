@@ -33,7 +33,7 @@ S.No | Project Name | Source Code |  Link To Project
 11 | Birthdays Tracker | [Source Code](https://github.com/Nikhil2408/birthdays-tracker) | [Open](https://birthdays-tracker.netlify.app/)
 12 | Color Shades Generator | [Source Code](https://github.com/Nikhil2408/color-shade-generator) | [Open](https://color-shades-generator1.netlify.app/)
 13 | Stock Images | [Source Code](https://github.com/Nikhil2408/stock-images) | [Open](https://stock-images1.netlify.app/)
-14 | Maths Quiz App | [Source Code](https://github.com/Nikhil2408/maths-quiz) | [open](https://maths-quiz-arithmetic.netlify.app/)
+14 | Maths Quiz App | [Source Code](https://github.com/Nikhil2408/maths-quiz) | [Open](https://maths-quiz-arithmetic.netlify.app/)
 
 
 
